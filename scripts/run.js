@@ -6,6 +6,8 @@ const main = async () => {
     const message = await helloContract.getMessage();
     console.log(message);
 
+    await helloContract.giveFeedback("myy");
+
     const feedbacks = await helloContract.getFeedbacks()
     console.log(feedbacks);
 

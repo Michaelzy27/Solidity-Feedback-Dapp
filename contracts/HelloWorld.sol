@@ -17,7 +17,7 @@ contract HelloWorld {
         return message;
     }
 
-    function giveFeedback(string hi) public view {
+    function giveFeedback(string memory hi) public {
         //Feedbacks.
         feed.push(hi);
 
